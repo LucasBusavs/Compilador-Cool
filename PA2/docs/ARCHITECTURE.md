@@ -6,6 +6,10 @@
 > O esqueleto já traz, e não devem ser removidos: os `#include`, `#define yylval cool_yylval`,
 > `#define yylex cool_yylex`, `MAX_STR_CONST`, o `YY_INPUT` que lê de `fin`, `string_buf`/`string_buf_ptr`, os
 > `extern` de `curr_lineno`/`verbose_flag`/`cool_yylval`, a definição `DARROW =>` e a regra `{DARROW}`.
+>
+> Acrescentamos `%option noyywrap` antes do bloco `%{ %}`: sem `yywrap()` o Makefile oficial liga com
+> `-lfl`, e o `libfl.so` do Ubuntu recente falha com `undefined reference to 'yylex'` (o `#define yylex
+> cool_yylex` esconde o símbolo). Verificado no WSL (flex 2.6.4, g++ 15). Não remover.
 
 ## Fluxo
 

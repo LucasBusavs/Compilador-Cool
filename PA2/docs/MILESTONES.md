@@ -29,7 +29,7 @@ seccionado de `cool.flex` (tarefa M0.4). Instalação e comandos: [SETUP.md](SET
 | 0.1 | Estrutura de docs/tests/scripts, `.gitignore`, `.gitattributes` | P1 | Feito |
 | 0.2 | Todas as perguntas bloqueantes respondidas (`QUESTIONS.md`) | responsável | Feito |
 | 0.3 | Cada integrante instala o ambiente seguindo [SETUP.md](SETUP.md), passos 1 a 5, e confere que o lexer de referência roda | todos | Pendente |
-| 0.4 | P1 roda `make -f /var/tmp/cool/assignments/PA2/Makefile`, confere que `make lexer` compila o esqueleto e faz commit de `cool.flex`, `test.cl` e `README` originais, com os delimitadores de seção, os `%x` e as variáveis combinadas em ARCHITECTURE.md | P1 | Pendente |
+| 0.4 | P1 roda `make -f /var/tmp/cool/assignments/PA2/Makefile`, confere que `make lexer` compila o esqueleto e faz commit de `cool.flex`, `test.cl` e `README` originais, com os delimitadores de seção, os `%x`, as variáveis combinadas em ARCHITECTURE.md e a linha `%option noyywrap` (sem ela o link falha em Ubuntu recente) | P1 | Pendente |
 | 0.5 | Conferir REQUIREMENTS/ARCHITECTURE contra o Manual quando ele chegar (Q08) | P3 | Aguardando o manual |
 
 Conclusão: sabemos o que é editável, como compilar e testar, quais tokens existem, quem faz o quê e o que

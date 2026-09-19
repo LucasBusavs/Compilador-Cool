@@ -30,6 +30,9 @@ make -f /var/tmp/cool/assignments/PA2/Makefile
 - Read-only symlinks, which are gitignored and must never be edited or copied: `Makefile`, `lextest.cc`,
   `utilities.cc`, `stringtab.cc`, `handle_flags.cc`, `mycoolc`, `parser`, `semant`, `cgen`.
 - Headers (`cool-parse.h`, `stringtab.h`, …) stay in `/var/tmp/cool/include/PA2` and are found via `-I`.
+- Keep `%option noyywrap` at the top of `cool.flex`: without it the link fails on recent Ubuntu
+  (`libfl.so: undefined reference to 'yylex'`). The many `-Wwrite-strings` warnings from `lextest.cc` and
+  `utilities.cc` are harmless.
 - Reference lexer: `/var/tmp/cool/lib/.x86_64/lexer`, the default test oracle. Where it disagrees with the
   assignment text, **the assignment text wins** (D014 in `docs/DECISIONS.md`): no trailing period in
   `String contains null character`, the same message for an escaped NUL, and `String constant too long`
