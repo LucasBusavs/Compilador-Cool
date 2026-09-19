@@ -110,9 +110,12 @@ desempenho falham ali (D012).
 cd ~
 git clone https://github.com/LucasBusavs/Compilador-Cool.git
 cd Compilador-Cool
-git config user.name  "Seu Nome"
-git config user.email "seu-email@exemplo.com"
+git config user.name  "Nome Real"              # troque pelo SEU nome; o texto entre aspas vai em cada commit
+git config user.email "email-do-github@exemplo.com"   # o e-mail da sua conta do GitHub
 ```
+
+Use o seu nome e e-mail de verdade: copiar os exemplos acima literalmente faz os commits saírem com autor
+falso. Para conferir: `git config user.name && git config user.email`.
 
 ## 5. Preparar `PA2/`
 
