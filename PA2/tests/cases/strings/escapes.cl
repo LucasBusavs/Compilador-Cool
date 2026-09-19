@@ -1,0 +1,5 @@
+"\b\t\n\f"
+"\a\q\z"
+"aspas \" dentro"
+"barra \ invertida"
+"\0 vira zero"

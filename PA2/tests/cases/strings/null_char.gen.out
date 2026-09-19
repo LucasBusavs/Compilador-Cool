@@ -1,0 +1,9 @@
+#name "tests/cases/strings/null_char.gen.cl"
+#1 ERROR "String contains null character"
+#1 OBJECTID depois_das_aspas
+#2 ERROR "String contains null character"
+#3 OBJECTID proxima_linha
+#4 ERROR "String contains null character"
+#4 OBJECTID barra_nul
+#5 STR_CONST "0"
+#5 OBJECTID ok_barra_zero

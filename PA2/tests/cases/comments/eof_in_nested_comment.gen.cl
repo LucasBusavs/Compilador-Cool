@@ -1,0 +1,1 @@
+b (* externo (* interno *) externo continua aberto

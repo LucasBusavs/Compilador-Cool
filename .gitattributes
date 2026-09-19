@@ -1,0 +1,8 @@
+# O scanner trata '\r' como whitespace e '\n' como fim de linha. Se o Git
+# converter para CRLF no Windows, strings e contagem de linhas nos testes mudam
+# de comportamento. Forçamos LF em tudo.
+* text=auto eol=lf
+
+# Casos de teste gerados byte a byte (caractere nulo, sem newline final, etc.)
+# não podem sofrer nenhuma normalização.
+*.gen.cl binary

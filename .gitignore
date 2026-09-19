@@ -1,0 +1,36 @@
+# --- Gerados pelo build (Flex + g++) ---
+cool-lex.cc
+lexer
+*.o
+*.d
+core
+core.*
+
+# --- Symlinks criados por `make -f /var/tmp/cool/assignments/PA2/Makefile` (D011) ---
+# Apontam para /var/tmp/cool; cada integrante os recria localmente.
+PA2/Makefile
+PA2/lextest.cc
+PA2/utilities.cc
+PA2/stringtab.cc
+PA2/handle_flags.cc
+PA2/mycoolc
+PA2/parser
+PA2/semant
+PA2/cgen
+PA2/test.output
+
+# --- Artefatos de entrega (gerados no M6, nunca versionados) ---
+*.tar.gz
+PA2.u
+
+# --- Saídas do runner de testes ---
+PA2/tests/out/
+
+# --- Editor / SO ---
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
